@@ -1,4 +1,4 @@
-# Paketler
+# Paket (Package)
 Paketler kısaca bir dizi .go dosyalarını içeren yapılardır. Paketlerin kullanımıyla alakalı bir örnek verelim.
 
 Sürekli matematiksel işlemlere ihtiyaç duyduğumuz projelerde çalıştığımızı, üs alma, faktöriyel hesaplama gibi işlemler için kod yazdığımızı farz edelim. 
