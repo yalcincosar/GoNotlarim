@@ -1,6 +1,6 @@
 # Diziler (Arrays) 
 Dizi aynı tip elemanları art arda sıralı bir şekilde tutan, sabit uzunluklu bir veri yapısıdır. Dizi elemanlarına indis veya index denilen değerlerle erişiriz. İndis 0 değerinden başlar. Diziler için bellek sıralı bir şekilde tahsis edilir. Bu nedenle dizi içinde hareket etmek hızlıdır. İndis aritmatiği ile dizi içinde dolaşabiliriz.
-### <img src="">
+### <img src="https://github.com/FYalcincosar/GoNotlarim/blob/main/Notlar/Array%20Slice%20Range%20Map/img/Array.svg?example=foo&sanitize=true>">
 
 ## Tanımlama ve Başlatma (Initializing)
 
@@ -123,7 +123,7 @@ Bir diziyi fonksiyonun parametresine geçirebiliriz fakat bu işlem dizinin boyu
 
 Dilim, dizi gibi tek veri tipinden elemanlara ve uzunluğa sahip, Üç bileşenli veri yapılarıdır. Bu bileşenler: İşlem yaptığımız dizinin ilk elemanının adresini tutan pointer, uzunluk ve kapasitedir. Dilim, dizinin üstünde bulunan dinamik bir katman gibi düşünülebilir.
 
-### <img src="">
+### <img src="https://github.com/FYalcincosar/GoNotlarim/blob/main/Notlar/Array%20Slice%20Range%20Map/img/Slice.svg?example=foo&sanitize=true>">
 
 Dilimin diziye göre en önemli farkı boyutun değişmesine imkan vermesidir.
 
@@ -199,9 +199,9 @@ Kapasitesi : 10  Uzunluğu:  10
 ```
 ## Nil ve Boş Dilimler
 
-### <img src="">
+### <img src="https://github.com/FYalcincosar/GoNotlarim/blob/main/Notlar/Array%20Slice%20Range%20Map/img/NilSliceRepresentation.svg?example=foo&sanitize=true>">
 Nil diliminin uzunluğu ve kapasitesi sıfırdır üzerinde işlem yaptığı dizisi yoktur bundan dolayı adres değeri tutan işaretçisi de nildir. 
-### <img src="">
+### <img src="hhttps://github.com/FYalcincosar/GoNotlarim/blob/main/Notlar/Array%20Slice%20Range%20Map/img/EmptySliceRepresentation.svg?example=foo&sanitize=true>">
 Boş diliminin de uzunluğu ve kapasitesi sıfırdır fakat boş dilimlerin üzerinde işlem yaptığı sıfır uzunluğa sahip dizisi vardır yani adres tutan işaretçisi nil değildir.
 
 
