@@ -125,7 +125,7 @@ deger: {Ahmet} tip: main.Muhendis
 ```
 
 
-# Interface{}
+## Interface{}
 
 Empty interface, yani boş herhangi bir metodu olmayan interfacedir. Metodu olmadığı için tüm tipler bunu otomatik olarak uygular. Bir fonksiyonun parametresi interface{} olursa o fonksiyon argüman olarak her türlü tipi alabilir. Java dilindeki object gibi düşünebiliriz.
 
@@ -161,7 +161,7 @@ Gördüğünüz gibi yapBiseyler() fonksiyonunun argümanına farklı tipler ge�
 Bu konuyla alakalı sık yapılan hatalardan biri yapBiseyler() fonksiyonunun parametresinde bulunan i değişkeninin her tipten olduğu düşüncesidir. Fakat gerçekte i interface{} tipindendir. Go runtime da bir tip dönüştürme (type conversion) işlemi yapar yani i değişkenine geçilen değeri interface{} tipine dönüştürür(gerekli görürse).
 
 
-Bu düşüncenin neden hatalı olduğunu ispatlayalım
+Bu düşüncenin neden hatalı olduğunu ispatlayalım.
 ```go
 package main
 
