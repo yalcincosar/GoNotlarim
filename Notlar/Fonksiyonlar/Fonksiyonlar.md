@@ -191,7 +191,7 @@ Merhaba Dünya
 ```
 Örnekte değişkene anonim bir foksiyon atadık ve değişkenimizi fonksiyon gibi kullandık.
 
-# Recursive (Özyineli) Fonksiyonlar 
+## Recursive (Özyineli) Fonksiyonlar 
 
 Fonksiyonu kendi içinde tekrardan çağırıp kullandığımız fonksiyonlardır.
 Fonksiyon içinde onu sonlandıracak bir koşul olmazsa fonksiyon kısır döngüye girecektir.
@@ -222,7 +222,7 @@ if sayi ==  0  {
 ```
 24
 ```
-# Defer 
+## Defer 
 
 Defer kelimesi ertemele, sonraya bırakma anlamındadır. Go dilinde bir fonksiyonu daha sonra çalıştırmak için başına defer kelimesini eklenilir. Defer kelimesiyle nitelenen fonksiyon bulunduğu kapsamdaki bütün işlemler yürütüldükten sonra çalışacaktır.
 
