@@ -123,9 +123,9 @@ Bir değişkenin mantıksal değer tutmasını istersek `bool` tipinden faydalan
 
 Değişkenler üzerinde birtakım işlemler yapan sembollerdir.
 
-## Aritmatik Operatörler
+## Aritmetik Operatörler
 
-Aritmatik işlemler yapan operatörlerdir.
+Aritmetik işlemler yapan operatörlerdir.
 
 | Operator |  Tanım  | Form |
 |:--------:|:-------:|:----:|
