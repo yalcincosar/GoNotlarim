@@ -104,7 +104,7 @@ func main() {
 ```
 
 ### Alıcısı Struct Olmayan Metotlar
-İlla alıcısı struct olmak zorunda değildir type ile oluşturduğumuz tiplerle metot kullanabiliriz
+Metot alıcısı struct olmak zorunda değildir, type ile oluşturduğumuz tiplerle metot kullanabiliriz.
 ```go
 package main
 
