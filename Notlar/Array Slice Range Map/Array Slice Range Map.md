@@ -201,7 +201,8 @@ Kapasitesi : 10  Uzunluğu:  10
 
 ### <img src="https://github.com/FYalcincosar/GoNotlarim/blob/main/Notlar/Array%20Slice%20Range%20Map/img/NilSliceRepresentation.svg?example=foo&sanitize=true>">
 Nil diliminin uzunluğu ve kapasitesi sıfırdır üzerinde işlem yaptığı dizisi yoktur bundan dolayı adres değeri tutan işaretçisi de nildir. 
-### <img src="hhttps://github.com/FYalcincosar/GoNotlarim/blob/main/Notlar/Array%20Slice%20Range%20Map/img/EmptySliceRepresentation.svg?example=foo&sanitize=true>">
+
+### <img src="https://github.com/FYalcincosar/GoNotlarim/blob/main/Notlar/Array%20Slice%20Range%20Map/img/EmptySliceRepresentation.svg?example=foo&sanitize=true>">
 Boş diliminin de uzunluğu ve kapasitesi sıfırdır fakat boş dilimlerin üzerinde işlem yaptığı sıfır uzunluğa sahip dizisi vardır yani adres tutan işaretçisi nil değildir.
 
 
