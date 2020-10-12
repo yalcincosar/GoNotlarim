@@ -16,7 +16,7 @@ Aynı örneğini paralellik için biraz değiştirelim. Kulağınızda kulaklık
 
 ## Go Dilinde Eşzamanlılık 
 
-Go dilinde eşzamanlılık fonksiyonların veya metotların birbirlerinden bağımsız çalışmasıdır. Bu bağımsız çalışmayı sağlamak için fonksiyonları veya metotları goroutine olarak oluşturmalıyız. Goroutine oluşturmanın maliyeti, thread oluşturmaktan oldukça ucuzdur. Boyutları başlangıçta birkaç kb'dır ihtiyaç durumuna göre boyutları büyüyebilir, threadlerin boyutları daha büyük ve sabittirler. Bu duruma göre goroutineleri hafif thread (lightweight thread) olarak düşünülebiliriz (Bazıları bu görüşe katılmamakta).
+Go dilinde eşzamanlılık fonksiyonların veya metotların birbirlerinden bağımsız çalışmasıdır. Bu bağımsız çalışmayı sağlamak için fonksiyonları veya metotları goroutine olarak oluşturmalıyız. Goroutine oluşturmanın maliyeti, thread oluşturmaktan oldukça ucuzdur. Boyutları başlangıçta birkaç kb'dır ihtiyaç durumuna göre boyutları büyüyebilir, threadlerin boyutları daha büyük ve sabittirler. Bu duruma göre goroutineleri hafif thread (lightweight thread) olarak düşünülebiliriz (bazıları bu görüşe katılmamakta).
 
 ### Go Runtime 
 
@@ -384,6 +384,7 @@ main.main()
 ```
 #### Tek Yönlü Channel
 Sadece veri göndermek veya sadece veri almak için tek yönlü channel oluşturabiliriz. 
+
 **Sadece Veri Almak İçin**
 kanal1:= make(<- chan bool)
 
