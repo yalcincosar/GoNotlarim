@@ -386,9 +386,11 @@ main.main()
 Sadece veri göndermek veya sadece veri almak için tek yönlü channel oluşturabiliriz. 
 
 **Sadece Veri Almak İçin**
+
 kanal1:= make(<- chan bool)
 
 **Sadece Veri Göndermek İçin**
+
 kanal2:= make(chan<-bool
 
 Tek yönlü channellar sayesinde çift yönlü channelları tek yönlü bir kanala dönüştürebiliriz. Tek yönlüyü çift yönlüye dönüştürmek mümkün değildir.
