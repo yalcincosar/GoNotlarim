@@ -1,5 +1,8 @@
 # Go Notlarım
-...
+
+Go hakkındaki edindiğim bilgileri temel ve anlaşılabilir bir düzeyde anlatmaya çalıştım. Eksik veya hatalı gördüğünüz kısımları belirtebilirsiniz, faydalı olması dileğiyle...
+
+
 # İçindekiler
 - [Temeller](https://github.com/FYalcincosar/GoNotlarim/blob/main/Notlar/Temeller/Temeller.md)
   - [Giriş](https://github.com/FYalcincosar/GoNotlarim/blob/main/Notlar/Temeller/Temeller.md#giri%C5%9F)
