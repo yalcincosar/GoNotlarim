@@ -72,7 +72,7 @@ func main() {
 	}
 }
 ```
-Çıktımız:
+Çıktı:
 ```go
 Ortalamanızı giriniz...
 45
@@ -112,14 +112,14 @@ func main() {
     fmt.Println("yas: ",yas)
 }
 ```
-Çıktımız:
+Çıktı:
 ```go
 ./prog.go:13:25: undefined: yas
 ```
 
 # For Döngüsü
 
-Bir kodun tekrar tekrar için döngüleri kullanırız. Go programlama dilinde döngü olarak for yapısı vardır. Diğer dillere nazaran for kullanımı biraz daha esnektir. Bu esneklik ile diğer döngü türlerini de oluşturabiliriz. For döngümüzün genel yapısını 3 kısımda inceleyelim;
+Bir kodun tekrar tekrar çalışması için döngüleri kullanırız. Go programlama dilinde döngü olarak for döngüsü vardır. Diğer dillere nazaran for kullanımı biraz daha esnektir. Bu esneklik ile diğer döngü türlerini de oluşturabiliriz. For döngümüzün genel yapısını 3 kısımda inceleyelim.
 
 ```go
 for baslatma; koşul; güncelleme {
@@ -249,7 +249,7 @@ func main() {
 	}
 }
 ```
-Case ifadesinin birden çok değeri olabilir mesela v değişkenine rakam atayalım, bu rakamın tek mi çift mi olduğunu yazdıralım. (Çift veya tek sayı kontrolü için mantıklı bir yok değil öğrenme amaçlı verilmiş bir örnektir)
+Case ifadesinin birden çok değeri olabilir mesela v değişkenine rakam atayalım, bu rakamın tek mi çift mi olduğunu yazdıralım. (Çift veya tek sayı kontrolü için mantıklı bir yok değil öğrenme amaçlı verilmiş bir örnek)
 ```go
 package main
 
