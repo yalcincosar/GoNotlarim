@@ -1,23 +1,23 @@
 # Giriş
 
-Go, basit, güvenilir ve verimli yazılım oluşturmayı kolaylaştıran açık kaynaklı bir programlama dilidir. Robert Griesemer, Rob Pike ve Ken Thompson tarafından 2007 yılında  Google'da geliştirildi, ancak 2009'da açık kaynaklı bir programlama dili olarak tanıtıldı 
+Go, basit, güvenilir ve verimli yazılım oluşturmayı kolaylaştıran statik olarak yazılmış açık kaynaklı bir programlama dilidir. Robert Griesemer, Rob Pike ve Ken Thompson tarafından 2007 yılında  Google'da geliştirildi, ancak 2009'da tanıtıldı. 
 
 ### Avantajları
 - Eşzamanlılık sağlaması
 - Derleme süresinin hızlı olması 
-- Garbage collection
+- Garbage Collection
 - Büyük sistemler için ölçeklenebilir olması
 - Statik bir dil olmasına rağmen dinamik hissiyatı vermesi
 
 ### Dezavantajları
 - Generics yok (şimdilik)
-- Hata yönetimi (error handling)
+- Hata yönetimi
 
 **Kurulum dökümanına [buradan](https://golang.org/doc/) ulaşabilirsiniz**
 
 ## İlk Program
 
-İlk programımız olarak ekrana hello world! yazdıralım, adettendir.
+İlk programımız olarak ekrana `hello world!` yazdıralım, adettendir.
 ```go
 package main
 
@@ -188,7 +188,7 @@ Değişkene ait değerin bitleri üzerinden işlem yapmak için kullanılır.
 # Değişken Tanımlama ve Inferred Typing
 
 Değişkenler **var** kelimesi ile tanımlanabilir. Bu tanımlamanın bazı yolları vardır.
-var kelimesinden sonra değişkenleri paranteze alıp tanımlaya biliriz.
+var kelimesinden sonra değişkenleri paranteze alıp tanımlayabiliriz.
 ```go 
 var (
     isim     string 
@@ -196,14 +196,14 @@ var (
     soyisim  string
 )
 ```
-Eğer aynı tipten değişken tanımlıyorsak bunları tek satırda virgül ile ayırarak tanımlayabiliriz.
+Eğer aynı tipten değişken tanımlıyorsak değişkenleri tek satırda virgül ile ayırarak tanımlayabiliriz.
 ```go
 var (
-	isim, soyisim string
+    isim, soyisim string
     numara int
 )
 ```
-Topluca tanımlamak yerine tek tek tanımlayabiliriz.
+Parantez içinde topluca tanımlamak yerine tek tek tanımlayabiliriz.
 ```go
 var isim string
 var numara int
@@ -252,16 +252,16 @@ Kısaca = ile değişken tanımlamak için var kelimesini kullanmalıyız fakat 
 
 # Tip Dönüşümü (Type Conversion)
 
-Tipler arası dönüşüm yapmak isteyebiliriz. Bunu `dönüştürmekİstediğimizTip(dönüştürülecekOlanDegisken)` şeklinde yaparız.
+Tipler arası dönüşüm yapmak isteyebiliriz. Bunu `dönüştürmek_İstediğimiz_Tip(dönüştürülecek_Olan_Degisken)` şeklinde yaparız.
 ```go
 var sayi int = 10;
 var sayi2 float32 =float32(sayi); 
 ```
-Yukarıdaki örnekte `sayi` isminde bir `int` tanımayıp 10 değerini atadık. Daha sonra `sayi2` ismiyle `float32` tipinde bir değişkene int olan sayi isimli değişkenimizi `float32` tipine dönüştürerek atadık.
+Yukarıdaki örnekte `sayi` isminde bir `int` tanımayıp 10 değerini atadık. Daha sonra `sayi2` isimli `float32` tipinde bir değişkene int olan `sayi` isimli değişkenimizi `float32` tipine dönüştürerek atadık.
 
 # Sabitler (Constants)
 
-Sabit dediğimiz değişkenler ilk değerlerini aldıktan sonra değiştirilemezler. Atama yapılmış bir sabiti değiştirmek compiler-time (derlenme zamanı) hatası ile sonuçlanır. 
+Sabitler ilk değerlerini aldıktan sonra değiştirilemezler. Atama yapılmış bir sabiti değiştirmek compiler-time (derlenme zamanı) hatası ile sonuçlanır. 
 
 Sabitlerin tanımlanması değişkenlere benzer fakat bazı farklılıklar vardır. 
 Hatırlarsanız değişken tanımlarken **var** kullanıyorduk sabitlerde ise **const** kelimesi kullanılır. 
@@ -275,7 +275,7 @@ Bir diğer farkımız ise sabitlere atama yaparken := ifadesi kullanılamaz.
 
 # Kapsam (Scope)
 	
-Değişkenin nerede tanımlandığı, değişkenin görünürlüğü için önemlidir. Kapsam bir değişkenin görünebilir olduğu alandır. Go da üç farklı yerde değişken tanımlama yapılabilir, tanımlanın yapıldığı yere göre Global değişken, yerel değişken ve parametre değişkeni denilir. 
+Değişkenin nerede tanımlandığı, değişkenin görünürlüğü için önemlidir. Kapsam bir değişkenin görünebilir olduğu alandır. Go da üç farklı yerde değişken tanımlama yapılabilir, tanımlanın yapıldığı yere göre global değişken, yerel değişken ve parametre değişkeni denilir. 
 
 ```go
   { //KAPSAM BAŞLANGIÇ
@@ -290,8 +290,8 @@ Herhangi bir fonksiyon içinde ya da bir kod bloğu içinde tanımlanmayan genel
 
 Bir fonksiyon ya da bir kod bloğu içinde tanımlanan değişkenlerdir. Sadece tanımlandığı blok veye fonksiyon içinden görünürdür.
 
-Aşağıda bulunan örneğe bakalım. main() fonksiyonunun başladığı küme parantezi  ile bittiği küme parantezi bizim yerel kapsamımızdır. 
-Burada tanımladığımız  x değişkeni **yerel değişkendir**. main() fonksiyonu kendi sınırları içerisinde bulunan bu değişkene ulaşmakta sorun yaşamaz.
+Aşağıda bulunan örneğe bakalım. main fonksiyonunun başladığı küme parantezi ile bittiği küme parantezi arasında kalan yer bizim yerel kapsamımızdır. 
+Burada tanımladığımız  x değişkeni **yerel değişkendir**. main fonksiyonu kendi sınırları içerisinde bulunan bu değişkene ulaşmakta sorun yaşamaz.
 Peki ya dışarıdan x değişkenimize ulaşabilir miyiz? 
  	
 ```go
@@ -309,9 +309,9 @@ fmt.Println(x)
 ```go
 syntax error: non-declaration statement outside function body
 ```
-Cevabımız gördüğünüz gibi hayır.
+Gördüğünüz gibi hayır.
 
-Programımızda g isminde bir değişkenimiz daha var. Bu değişkenimiz global değişkendir ve heryerden erişebiliriz. main() fonksiyonu içinden g değişkenimize erişmeye çalışalım.
+Programımızda `g` isminde bir değişkenimiz daha var. Bu değişkenimiz global değişkendir ve heryerden erişebiliriz. main fonksiyonu içinden `g` değişkenimize erişmeye çalışalım.
 
 ```go
 package main
@@ -329,7 +329,7 @@ func main() {
 Merhaba Evren
 Merhaba Dünya
 ```
-Görüldüğü gibi g değişkenine sorunsuz bir şekilde erişebildik.
+`g` değişkenine sorunsuz bir şekilde erişebildik.
 
 İsmi aynı olan global ve lokal olmak üzere iki farklı değişken tanımlayabiliriz. Peki fonksiyon içinde değişkeni kullanmak istedik. Go hangisini tercih eder ? 
 ```go
