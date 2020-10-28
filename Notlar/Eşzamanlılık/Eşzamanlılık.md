@@ -328,7 +328,9 @@ gelen := <- kanal1
 
 Unbuffered channel, tutulmadan önce herhangi bir değeri saklama kapasitesi olmayan bir kanaldır. Verinin hem gönderilme hemde alınması için iki goroutinenin aynı anda hazır olması gerekir. Eğer aynı anda hazır olmazlarsa kanal goroutineyi bekler. Böylelikle senkronizasyon sağlanır. 
 
-![Alt text](https://www.ardanlabs.com/images/goinggo/Screen+Shot+2014-02-16+at+10.10.54+AM.png "baslik")
+![Alt text](https://www.ardanlabs.com/images/goinggo/Screen+Shot+2014-02-16+at+10.10.54+AM.png "baslik") 
+Kaynak [Ardanlabs-The Nature Of Channels In Go](https://www.ardanlabs.com/blog/2014/02/the-nature-of-channels-in-go.html)
+
  
 Şekil iki goroutine arasında bir değeri kanal kullanarak paylaşmayı temsil etmekte. 1 numaralı durumda goroutineler kanala ellerini sokmadıkları için herhangi bir işlem gerçekleşmez. 2.durumda solda bulunan goroutine (elindeki yeşil çubuK transfer edilecek veri) kanala elini sokar bu durum bir gönderme işlemini yapmak istediğini temsil eder. İşlem tamamlanana kadar kilitlenir. 3.durumda sağda bulunan goroutine de kanala elini sokarak kanaldan bir veri alma işlemini temsil eder. Bu goroutinede kanalda transfer işlemi bitene kadar kilitli kalır. Transfer işlemleri 4 ve 5. adımdan sonra bitmiş olur. Artık kilitler kalkar 6.adımda her iki goroutine de ellerini kanaldan çıkartmıştır.
 
